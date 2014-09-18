@@ -1,0 +1,9 @@
+SplunkServer	192.168.209.155
+SplunkAdmin	admin
+SplunkPass	password
+SplunkIndex	main
+SplunkHost	Demonstration
+DynaTraceServer	192.168.209.155
+DynaTraceUser	admin
+DynaTracePass	admin
+Dashboard	easyTravel PurePaths

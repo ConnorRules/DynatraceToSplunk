@@ -1,0 +1,15 @@
+c:\users\amicxg0\documents\visual studio 2012\Projects\SplunkDataMigrator\SplunkDataMigrator\bin\Debug\SplunkDataMigrator.exe.config
+c:\users\amicxg0\documents\visual studio 2012\Projects\SplunkDataMigrator\SplunkDataMigrator\bin\Debug\SplunkDataMigrator.exe
+c:\users\amicxg0\documents\visual studio 2012\Projects\SplunkDataMigrator\SplunkDataMigrator\bin\Debug\SplunkDataMigrator.pdb
+c:\users\amicxg0\documents\visual studio 2012\Projects\SplunkDataMigrator\SplunkDataMigrator\bin\Debug\Newtonsoft.Json.dll
+c:\users\amicxg0\documents\visual studio 2012\Projects\SplunkDataMigrator\SplunkDataMigrator\bin\Debug\SplunkSDK.dll
+c:\users\amicxg0\documents\visual studio 2012\Projects\SplunkDataMigrator\SplunkDataMigrator\bin\Debug\Newtonsoft.Json.xml
+c:\users\amicxg0\documents\visual studio 2012\Projects\SplunkDataMigrator\SplunkDataMigrator\obj\Debug\SplunkDataMigrator.exe
+c:\users\amicxg0\documents\visual studio 2012\Projects\SplunkDataMigrator\SplunkDataMigrator\obj\Debug\SplunkDataMigrator.pdb
+C:\Users\amicxg0\documents\visual studio 2012\Projects\SplunkDataMigrator\SplunkDataMigrator\bin\Debug\SplunkDataMigrator.exe.manifest
+C:\Users\amicxg0\documents\visual studio 2012\Projects\SplunkDataMigrator\SplunkDataMigrator\bin\Debug\SplunkDataMigrator.application
+C:\Users\amicxg0\documents\visual studio 2012\Projects\SplunkDataMigrator\SplunkDataMigrator\obj\Debug\SplunkDataMigrator.exe.manifest
+C:\Users\amicxg0\documents\visual studio 2012\Projects\SplunkDataMigrator\SplunkDataMigrator\obj\Debug\SplunkDataMigrator.application
+C:\Users\amicxg0\documents\visual studio 2012\Projects\SplunkDataMigrator\SplunkDataMigrator\obj\Debug\SplunkDataMigrator.csprojResolveAssemblyReference.cache
+C:\Users\amicxg0\Documents\Visual Studio 2012\Projects\SplunkDataMigrator\SplunkDataMigrator\bin\Debug\SplunkSDK.pdb
+C:\Users\amicxg0\Documents\Visual Studio 2012\Projects\SplunkDataMigrator\SplunkDataMigrator\bin\Debug\SplunkSDK.xml
