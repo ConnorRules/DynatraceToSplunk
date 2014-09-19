@@ -59,12 +59,13 @@ namespace SplunkDataMigrator
                                     if (reader.Name == "start")
                                     {
                                         DateTime dt = new DateTime();
-                                        const string FORMAT = "ddd MMM dd HH:mm:ss PDT yyyy";
+                                        const string FORMAT = "ddd MMM dd HH:mm:ss  yyyy";
 
-                                        if (DateTime.TryParseExact(reader.Value.ToString(), FORMAT, CultureInfo.InvariantCulture,
+                                        if (DateTime.TryParseExact(reader.Value.ToString().Remove(20,3), FORMAT, CultureInfo.InvariantCulture,
                                             System.Globalization.DateTimeStyles.AssumeUniversal, out dt))
                                         {
-                                            string date = dt.ToString("MMM dd HH:mm:ss.fff", CultureInfo.InvariantCulture);
+                                            dt = dt.AddHours(4);
+                                            string date = dt.ToString("MMM dd hh:mm:ss tt", CultureInfo.InvariantCulture);
                                             message = "\"time\":\"" + date + "\", " + message;
                                             //message = "\"time\":\"" + DateTime.UtcNow + "\", " + message;
                                             continue;

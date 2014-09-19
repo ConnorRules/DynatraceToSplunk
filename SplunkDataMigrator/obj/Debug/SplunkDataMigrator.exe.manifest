@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SplunkDataMigrator.exe" size="14336">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SplunkDataMigrator.exe" size="14848">
       <assemblyIdentity name="SplunkDataMigrator" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Vxe2t7jUc7Ux9Zw3MqyEJCWzgM/5oVpvFgg+JEZrIiY=</dsig:DigestValue>
+        <dsig:DigestValue>uzZgHqK6GcQmIqCZTo93FNogveLtiqcuFmJYDgcncfA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

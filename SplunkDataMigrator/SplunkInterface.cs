@@ -11,7 +11,8 @@ namespace SplunkDataMigrator
     {
         private Service service = null;
         private bool connected = false;
-        private System.IO.Stream iStream = null;
+        public System.IO.Stream iStream = null;
+
 
         public bool Connect(string hostname, string username, string pass)
         {
@@ -99,12 +100,16 @@ namespace SplunkDataMigrator
 
         public bool CloseStream()
         {
-            if (!connected) return false;
+            if (iStream == null) return false;
 
+            try
+            {
+                iStream.Flush();
+                iStream.Dispose();
+                iStream.Close();
+            }
+            catch { }
 
-            iStream.Flush();
-            iStream.Dispose();
-            iStream.Close();
 
             return true;
         }
@@ -126,6 +131,6 @@ namespace SplunkDataMigrator
             return true;
         }
 
-            
+
     }
 }

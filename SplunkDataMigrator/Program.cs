@@ -29,7 +29,9 @@ namespace SplunkDataMigrator
             
             //Send the homemade args to splunk
             if (Interfacer.Connect(SplunkServer, SplunkAdmin, SplunkPass)) Console.WriteLine("Connected Successfully");
-            Interfacer.OpenStream(SplunkIndex, SplunkHost, "dynaTrace", "_json");
+
+            //Moves the openstream into the loop so if it is disconnected (normally every 20k events sent) it can reconnec
+            //Interfacer.OpenStream(SplunkIndex, SplunkHost, "dynaTrace", "_json");
 
             //Get the dashboard from the REST interface
             RestInterface REST = new RestInterface();
@@ -38,9 +40,23 @@ namespace SplunkDataMigrator
             int count = 0;
             foreach (string i in xmlint.Read(REST.Get(Dash, DTUser, DTPass, DTServer)))
             {
-                Console.WriteLine("{" + i.Remove(i.Length - 2) + "}\n");
-                Interfacer.WritetoStream("{" + i.Remove(i.Length - 2) + "}\n");     
-                count++;
+                try
+                {
+                    if (Interfacer.iStream == null)
+                    {
+                        Interfacer.OpenStream(SplunkIndex, SplunkHost, "dynaTrace", "_json");
+                    }
+                    Console.WriteLine("{" + i.Remove(i.Length - 2) + "}\n");
+                    Console.WriteLine(count);
+                    Interfacer.WritetoStream("{" + i.Remove(i.Length - 2) + "}\n");
+                    count++;
+                }
+                catch
+                {
+                    Interfacer.CloseStream();
+                    Interfacer.OpenStream(SplunkIndex, SplunkHost, "dynaTrace", "_json");
+
+                }
             }
 
             Console.WriteLine("Sent " + count + " events to Splunk Server.");
